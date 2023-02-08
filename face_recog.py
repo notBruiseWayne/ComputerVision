@@ -8,7 +8,7 @@ haar_face = cv.CascadeClassifier(r'haar_face.xml')
 face_recognizer = cv.face.LBPHFaceRecognizer_create()
 face_recognizer.read('face_trained.yml')
 
-img = cv.imread(r'E:\cv01\Photos\Faces\validation\amanda2.jpg')
+img = cv.imread(r'''yourPath'''\Faces\validation\amanda2.jpg')
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('Image', gray)
 faces_rect = haar_face.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=6)
