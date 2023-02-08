@@ -28,7 +28,7 @@ def detect(gr, fa):
     return fa
 
 
-capture = cv.VideoCapture(r'E:\cv01\Videos\jimi.mp4')
+capture = cv.VideoCapture(r'yourPath\jimi.mp4')
 while True:
     isTrue, frame = capture.read()  # gives two values  a boolean for the status of read and the frame of the video that
     # can be shown with cv.imshow() method
