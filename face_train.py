@@ -5,10 +5,10 @@ import time
 
 start_time = time.time()
 p = []
-for i in os.listdir(r'E:\cv01\Photos\Faces\Train'):
+for i in os.listdir(r'yourPath\Faces\Train'):
     p.append(i)
 print(p)
-DIR = r'E:\cv01\Photos\Faces\Train'
+DIR = r'yourPath\Faces\Train'
 haar_face = cv.CascadeClassifier(r'haar_face.xml')
 features = []
 labels = []
